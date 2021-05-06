@@ -11,12 +11,12 @@
                 </div>
             </div>
             <nav class="menu" id="menu">
-                <a href="paquetes.php">Paquetes</a>
-                <a href="productosyservicios.php">Productos y Servicios</a>
-                <a href="soporte.php">Soporte</a>
-                <a href="nosotros.php">Nosotros</a>
-                <a href="contacto.php">Contacto</a>
-                <a href="fundacion.php">Fundacion Inet</a>                      
+                <a href="paquetes.html">Paquetes</a>
+                <a href="productosyservicios.html">Productos y Servicios</a>
+                <a href="soporte.html">Soporte</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="fundacion.html">Fundacion Inet</a>                      
             </nav>
         </div>
-    </header>
+</header>
