@@ -26,7 +26,7 @@
 }
 
 .btn{
-    padding: 16px 16px;
+    padding: 12px 12px;
     background-color: var(--primario);
     border-radius: 4px;
     color: var(--blanco);
@@ -320,9 +320,14 @@
     }
 }
 
-
 .contenedor-paquete{
     padding: 16px;
+}
+
+@media (min-width: 1024px){
+    .contenedor-paquete{
+        padding: 12px 8px;
+    }
 }
 
 .paquete{
@@ -372,10 +377,11 @@
 .contenido-paquete .imagen-btn{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .imagen-paquete{
-    width: 100px;
+    width: 80px;
 }
 
 .imagen-paquete img{
@@ -526,5 +532,110 @@
         height: 200px;
     }
 }
+
+/*#endregion*/
+
+
+/*#region Hero-Paginas*/
+.hero-paginas{
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-paginas.bg-paquetes{
+    background-image: url('../img/bg_paquetes.jpg');
+}
+
+.hero-paginas.bg-productos{
+    background-image: url('../img/bg_productos.jpg');
+}
+
+.hero-paginas.bg-soporte{
+    background-color: var(--azulClaro);
+}
+
+.hero-paginas.bg-nosotros{
+    background-image: url('../img/bg_nosotros.jpg');
+}
+
+.hero-paginas.bg-contacto{
+    background-image: url('../img/bg_contacto.jpg');
+}
+
+.hero-paginas.bg-fundacion{
+    background-image: url('../img/bg_fundacion.jpg');
+}
+
+
+
+.hero-paginas .hero-overlay{
+    background-image: linear-gradient(to top, #11327c 0%, #11337cc5 30%, #11337c00 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-paginas .hero-contenedor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-paginas .hero-contenedor .hero-texto{
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    top: calc(25%);
+    left: 5%;
+    right: 5%;
+}
+
+/*#endregion*/
+
+/*#region Pagina paquetes*/
+.pg-paquetes{
+    max-width: 400px;
+    margin: auto;
+}
+
+@media (min-width:680px){
+    .pg-paquetes{
+        max-width: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:680px){
+    .pg-paquetes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.paquete .contenido-paquete ul li{
+    text-align: left;
+}
+
+@media (min-width:680px){
+    .pg-paquetes .contenedor-paquete.w-3{
+        width: 33.3%;
+        padding: 8px;
+    }
+}
+
+@media (min-width:680px){
+    .pg-paquetes .contenedor-paquete.w-1{
+        width: 100%;
+        max-width: 750px;
+        margin: auto;
+
+    }
+}
+
+
+
+
 
 /*#endregion*/
