@@ -633,9 +633,33 @@
 
     }
 }
+/*#region Seccion Beneficios*/
+.contenedor-beneficios-paquetes .contenedor-iconos-texto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
 
+.contenedor-iconos-texto .icono-texto{
+    padding: 24px 24px;
+    text-align: center;
+    width: 50%;
+}
 
+@media (min-width:850px){
+    .contenedor-iconos-texto .icono-texto{
+        width: 33.33%;
+        padding: 24px 32px;
+    }
+}
 
+.contenedor-iconos-texto .icono-texto i{
+    font-size: 40px;
+}
 
+.contenedor-iconos-texto .icono-texto p{
+    font-size: 18px;
+}
+/*#endregion*/
 /*#endregion*/
