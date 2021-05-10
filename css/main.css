@@ -552,10 +552,6 @@
     background-image: url('../img/bg_productos.jpg');
 }
 
-.hero-paginas.bg-soporte{
-    background-color: var(--azulClaro);
-}
-
 .hero-paginas.bg-nosotros{
     background-image: url('../img/bg_nosotros.jpg');
 }
@@ -593,7 +589,7 @@
 
 /*#endregion*/
 
-/*#region Pagina paquetes*/
+/*#region Página paquetes*/
 .pg-paquetes{
     max-width: 400px;
     margin: auto;
@@ -662,4 +658,113 @@
     font-size: 18px;
 }
 /*#endregion*/
+/*#endregion*/
+
+/*#region Página Prodcutos y Servicios*/
+.contenedor-categoria-productos h3.categoria-titulo{
+    margin: 24px;
+    text-align: center;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;    
+}
+
+@media (min-width:680px){
+    .contenedor-productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:900px){
+    .contenedor-productos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.imagen-producto img{
+    width: 100%;
+}
+
+.texto-producto{
+    text-align: center;
+}
+
+.texto-producto .nombre-producto{
+    font-weight: bold;
+}
+
+/*#region Servicios*/
+
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.servicio .nombre-servicio h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.contenedor-servicios .imagen-servicio img{
+    width: 100%;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Página Soporte*/
+.bg-soporte{
+    padding: 24px 0px;
+    height: 30vh;
+    background-color: var(--primario);
+}
+
+.contenedor-soporte-hero .titulo{
+    font-size: 20px;
+    color: var(--blanco);
+}
+
+.contenedor-soporte-hero .input-hero{
+    width: 100%;
+    padding: 16px;
+    border: none;
+}
+
+.contenedor-soporte .titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenedor-pregunta{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--grisClaro);
+    margin-bottom: 8px;
+}
+
+.contenedor-pregunta .pregunta{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contenedor-pregunta .respuesta{
+    height: 0px;
+    opacity: 0%;
+    transition: all 0.4s ease;
+
+}
+
+.contenedor-pregunta .respuesta.visible{
+    height: 80px;
+    opacity: 80%;
+    transition: all 0.4s ease;
+
+}
+
+
+
 /*#endregion*/
