@@ -6,9 +6,14 @@ window.addEventListener('DOMContentLoaded', function(){
         contenedor[i].addEventListener('click', desplegar);
     }
 
-    function desplegar(e){
-        let cont = this.firstElementChild.nextElementSibling;
-        cont.classList.toggle('visible')
-
+    function desplegar(){
+        let respuesta = this.firstElementChild.nextElementSibling;
+        respuesta.classList.toggle('visible');
+        
+        if(respuesta.style.maxHeight){
+            respuesta.style.maxHeight = null
+        }else{
+            respuesta.style.maxHeight = respuesta.scrollHeight + 'px';
+        }
     }
 });
