@@ -817,7 +817,122 @@
     margin-right: 12px;
 
 }
+.contenedor-soporte-datos .icono-texto a{
+    color: var(--primario);
+    text-decoration: none;
+}
+/*#endregion*/
+
+/*#region Pagina Nosotros*/
+.wave-nosotros{
+    height: 100px;
+    overflow: hidden;
+}
+
+.contenedor-mision-vision{
+    margin: -40px 0;
+}
+
+@media (min-width:680px){
+    .contenedor-mision-vision{
+        display: flex;
+    }
+}
 
 
+.contenedor-mision, .contenedor-vision{
+    padding: 40px;
+}
+
+.mision-img img, .vision-img img{
+    width: 100%;
+}
+
+.mision-texto, .vision-texto{
+    text-align: center;
+}
+
+.mision-texto .titulo-mision, .vision-texto .titulo-vision{
+    font-size: 22px;
+}
+
+/*#region Galeria Proceso Servicio*/
+.seccion-nosotros-galeria{
+    margin-top: -24px;
+}
+
+.galeria-pasos{
+    margin-top: 32px;
+}
+
+@media (min-width:680px){
+    .principal-img-texto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+.galeria-pasos .img-principal img{
+    width: 100%;
+}
+
+.galeria-pasos .texto-principal{
+    display: none;
+    opacity: 0;
+}
+
+.galeria-pasos .texto-principal.activo{
+    opacity: 100%;
+    display: block;
+}
+
+@media (min-width:680px){
+    .galeria-pasos .texto-principal .titulo{
+    font-size: 22px;
+    }
+}
+
+
+@media (min-width:680px){
+    .galeria-pasos .texto-principal .titulo{
+        margin-top: 0;
+    }
+}
+
+.galeria-imagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 24px 0;
+}
+
+@media (min-width:680px){
+    .galeria-imagenes{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin: 24px 0;
+    }
+}
+
+.galeria-imagenes .contenedor-imagenes{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagenes .contenedor-imagenes:hover{
+    transform: scale(1.1);
+
+}
+
+.galeria-imagenes .contenedor-imagenes img{
+    width: 100%;
+    
+}
+
+
+/*#endregion*/
 
 /*#endregion*/
