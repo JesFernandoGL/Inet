@@ -66,13 +66,12 @@
 
 .seccion h2.titulo {
     text-align: center;
-    margin-bottom: 8px;
     font-size: 22px;
 }
 
 .seccion h3.subtitulo{
     text-align: center;
-    margin-top: 0;
+    margin-top: -8px;
     font-size: 18px;
     font-weight: normal;
 }
@@ -770,6 +769,7 @@
     background-color: var(--grisClaro);
     margin-bottom: 8px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .contenedor-pregunta .pregunta{
@@ -932,6 +932,24 @@
     
 }
 
+
+/*#endregion*/
+
+/*#region Video*/
+.video-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.video-contenedor video{
+    width: 100%;
+}
+
+@media (min-width:680px){
+    .video-contenedor video{
+        width: 75%;
+    }
+}
 
 /*#endregion*/
 
