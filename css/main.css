@@ -10,6 +10,8 @@
     --azulClaro: #3aa9e0;
     --azulOscuro: #11327c;
 
+    --amarillo: #FADD62;
+
 }
 
 *{
@@ -34,10 +36,16 @@
     display: inline-block;
     text-align: center;
     margin: 24px 0;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-center{
     display: block;
+}
+
+.btn-100{
+    width: 100%;
 }
 
 .bg-blanco{
@@ -291,6 +299,8 @@
 
 .hero-texto p.descripcion{
     margin-top: -16px;
+    font-size: 18px;
+
 }
 @media (min-width: 680px){
     .hero-texto p.descripcion{
@@ -574,8 +584,6 @@
     background-image: url('../img/bg_fundacion.jpg');
 }
 
-
-
 .hero-paginas .hero-overlay{
     background-image: linear-gradient(to top, #11327c 0%, #11337cc5 30%, #11337c00 100%);
     width: 100%;
@@ -670,7 +678,7 @@
 /*#endregion*/
 /*#endregion*/
 
-/*#region Página Prodcutos y Servicios*/
+/*#region Página Productos y Servicios*/
 .contenedor-categoria-productos h3.categoria-titulo{
     margin: 24px;
     text-align: center;
@@ -952,5 +960,123 @@
 }
 
 /*#endregion*/
+
+/*#endregion*/
+
+/*#region Contacto*/
+.seccion-contacto{
+    background-color: var(--blanco);
+}
+
+@media (min-width:680px){
+    .contenedor-datos-mapa{
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.contenedores-datos-mapa{
+    flex: 0 0 calc(50% - 16px);
+}
+
+.datos-formulario{
+    width: 100%;
+}
+
+.datos-formulario .contacto-datos{
+    padding: 12px;
+}
+
+.contacto-datos .icono-texto{
+    padding: 8px;
+    text-align: center;
+}
+
+.contacto-datos .icono-texto i{
+    margin-right: 12px;
+    font-size: 24px;
+}
+
+.contacto-datos .icono-texto a{
+    color: var(--primario);
+    text-decoration: none;
+}
+
+.contacto-formulario{
+    border-radius: 4px;
+}
+
+.contacto-formulario fieldset{
+    border: none;
+}
+
+.contacto-formulario legend{
+    padding: 20px 0;
+    margin: auto;
+    font-weight: bold;
+    color: var(--amarillo);
+    text-align: center;
+}
+
+.contacto-formulario .label-input{
+    display: flex;
+    flex-direction: column;
+
+}
+.contacto-formulario label{
+    color: var(--blanco);
+}
+
+.contacto-formulario input, .contacto-formulario textarea{
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+}
+
+
+.contacto-mapa{
+    width: 100%;
+}
+
+.contacto-mapa .mapa{
+    width: 100%;
+    height: 100%;
+}
+/*#endregion*/
+
+/*#region Fundacion*/
+.contenedor-modulos-fundacion{
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 900px){
+    .contenedor-modulos-fundacion{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.contenedor-modulos-fundacion .contenido-modulo{
+    max-width: 500px;
+}
+
+@media (min-width: 900px){
+    .contenedor-modulos-fundacion .contenido-modulo{
+        width: 50%;
+        flex: 0 0 calc(50% - 32px);
+        max-width: none;
+    }
+}
+
+.modulo-fundacion-texto .titulo{
+    font-weight: bold;
+}
+
+.modulo-fundacion-img img{
+    width: 100%;
+}
+
 
 /*#endregion*/
