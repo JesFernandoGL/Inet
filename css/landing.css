@@ -41,6 +41,8 @@ body{
     background-color: rgba(37, 60, 114, 0.80);
     width: 100%;
     height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -54,6 +56,14 @@ body{
     top: -100px
 }
 
+@media (max-width:680px){
+    .oferta-bg{
+        width: 250px;
+        height: 250px;
+
+    }
+}
+
 .oferta-bg .oferta-txt{
     color: var(--blanco);
     position: absolute;
@@ -61,10 +71,24 @@ body{
     left: 40px;
 }
 
+@media (max-width:680px){
+    .oferta-bg .oferta-txt{
+    bottom: 60px;
+    left: 10px;
+    }
+}
+
+
 .oferta-bg .oferta-txt .txt-oferta-big{
     font-size: 50px;
     margin: 0;
+}
 
+@media (max-width:680px){
+    .oferta-bg .oferta-txt .txt-oferta-big{
+        font-size: 40px;
+        margin: 0;
+    }
 }
 
 .oferta-bg .oferta-txt .txt-oferta-min{
@@ -72,16 +96,21 @@ body{
     font-size: 22px;
 }
 
+@media (max-width:680px){
+    .oferta-bg .oferta-txt .txt-oferta-min{
+        font-size: 18px;
+    }
+}
+
 .pos-relative{
     position: relative;
-    width: 90%;
-    height: 100%;
+    width: 92%;
     padding: 12px;
 }
 
 .txt-landing{
     position: absolute;
-    top: 20vh;
+    top: 18vh;
     color: var(--blanco);
 }
 
