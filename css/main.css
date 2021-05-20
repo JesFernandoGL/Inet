@@ -16,8 +16,13 @@
 
 }
 
+@font-face{
+    font-family: 'aileron';
+    src: url(../fonts/aileron.regular.otf);
+}
+
 *{
-    font-family: 'lato', sans-serif;
+    font-family: 'aileron', sans-serif;
     box-sizing: border-box;
 }
 
@@ -77,7 +82,7 @@
 }
 
 .bold{
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .seccion h2.titulo {
@@ -169,7 +174,6 @@
 .menu a{
     display: inline-block;
     color: var(--negro);
-    font-weight: bold;
     font-size: 16px;
     text-decoration: none;
     padding: 16px;
@@ -198,7 +202,6 @@
     align-items: flex-end;
     color: var(--negro);
     font-size: 20px;
-    font-weight: bold;
     cursor: pointer ;
 
 }
@@ -291,7 +294,7 @@
 
 
 .hero-datos .numero-telefono{
-    font-weight: bold;
+    font-weight: normal;
 }
 
 
@@ -521,7 +524,6 @@
 
 .resultados-numero-texto{
     text-align: center;
-    font-weight: bold;
     margin: auto;
     width: 80%;
     max-width: 450px;
@@ -538,7 +540,7 @@
 }
 
 .resultados-numero-texto .texto{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -24px;
 }
 
@@ -756,15 +758,17 @@
 }
 
 .contenedor-iconos-texto .icono-texto{
-    padding: 24px 24px;
+    padding: 8px 8px;
     text-align: center;
     width: 50%;
+    max-width: 280px;
 }
 
 @media (min-width:850px){
     .contenedor-iconos-texto .icono-texto{
         width: 33.33%;
         padding: 24px 32px;
+        max-width: none;
     }
 }
 
@@ -773,7 +777,7 @@
 }
 
 .contenedor-iconos-texto .icono-texto p{
-    font-size: 18px;
+    font-size: 16px;
 }
 /*#endregion*/
 /*#endregion*/
@@ -881,8 +885,7 @@
 }
 
 .contenedor-pregunta .pregunta{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .contenedor-pregunta .respuesta{
