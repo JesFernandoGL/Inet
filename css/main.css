@@ -784,9 +784,30 @@
 
 /*#region Página Productos y Servicios*/
 .contenedor-categoria-productos h3.categoria-titulo{
-    margin: 24px;
+    margin: 4px;
     text-align: center;
 }
+
+.contenedor-marcas-productos{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-marcas-productos .marca-producto{
+    margin-right: 8px;
+    background-color: var(--primario);
+    padding: 12px;
+    color: var(--blanco);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor-marcas-productos .marca-producto:hover{
+    background-color: var(--secundario);
+
+}
+
 
 .contenedor-productos{
     display: grid;
@@ -804,6 +825,16 @@
     .contenedor-productos{
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+.contenedor-productos .producto.visible{
+    display: block;
+
+}
+
+.contenedor-productos .producto.hidden{
+    display: none;
+
 }
 
 .imagen-producto img{
