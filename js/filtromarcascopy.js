@@ -4,7 +4,7 @@ const limites = document.querySelectorAll('.limite');
 /* const productos = document.querySelectorAll('.producto'); */
 
 
-limites.forEach(limite => {
+/* limites.forEach(limite => {
     limite.addEventListener('click', function(e){
     let limiteProductos = limite.value;
     const productos = e.target.parentElement.parentElement.nextElementSibling.children;
@@ -40,7 +40,7 @@ limites.forEach(limite => {
     console.log(productos);
 })
 });
-
+ */
 
 
 

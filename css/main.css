@@ -784,7 +784,6 @@
 
 /*#region Página Productos y Servicios*/
 .contenedor-categoria-productos h3.categoria-titulo{
-    margin: 4px;
     text-align: center;
 }
 
@@ -801,6 +800,11 @@
     text-align: center;
     border: none;
     cursor: pointer;
+}
+
+.contenedor-marcas-productos .marca-producto:last-of-type{
+    margin-right: 0px;
+
 }
 
 .contenedor-marcas-productos .marca-producto:hover{
@@ -829,7 +833,6 @@
 
 .contenedor-productos .producto.visible{
     display: block;
-
 }
 
 .contenedor-productos .producto.hidden{
