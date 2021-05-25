@@ -11,7 +11,7 @@
                 </div>
             </div>
             <nav class="menu" id="menu">
-                <a href="paquetes.html">Paquetes</a>
+                <a href="planes.html">Paquetes</a>
                 <a href="productosyservicios.html">Productos y Servicios</a>
                 <a href="soporte.html">Soporte</a>
                 <a href="nosotros.html">Nosotros</a>

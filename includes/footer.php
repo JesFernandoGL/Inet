@@ -2,7 +2,7 @@
         <div class="contenedor">
             <div class="contenedor-footer txt-blanco">
                 <div class="footer-enlaces">
-                    <a href="paquetes.html">Paquetes</a>
+                    <a href="planes.html">Paquetes</a>
                     <a href="productosyservicios.html">Productos y Servicios</a>
                     <a href="soporte.html">Soporte</a>
                     <a href="nosotros.html">Nosotros</a>

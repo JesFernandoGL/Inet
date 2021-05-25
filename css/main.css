@@ -324,6 +324,7 @@
     font-size: 28px;
     font-weight: bold;
     text-align: center;
+    color: var(--blanco);
 }
 
 @media (min-width: 680px){
@@ -337,9 +338,20 @@
         font-size: 56px;
     }
 }
-.hero-texto-inicio p{
+
+.hero-texto-inicio .subtitulo{
     color: var(--blanco);
+    text-align: center;
+    font-size: 24px;
 }
+
+@media (min-width: 680px){
+    .hero-texto-inicio .subtitulo{
+        text-align: initial;
+        font-size: 32px;
+    }
+}
+
 
 .hero-texto-inicio p.descripcion{
     margin-top: -16px;
