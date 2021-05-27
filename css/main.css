@@ -986,30 +986,28 @@
     overflow: hidden;
 }
 
-.contenedor-mision-vision{
-    margin: -40px 0;
-}
-
 @media (min-width:680px){
-    .contenedor-mision-vision{
+    .contenedor-modulos-nosotros{
         display: flex;
+        justify-content: space-between;
     }
 }
 
 
-.contenedor-mision, .contenedor-vision{
-    padding: 40px;
+.contenedor-modulos-nosotros .modulo-nosotros{
+    flex: 0 0 calc(33.3% - 16px);
 }
 
-.mision-img img, .vision-img img{
+.contenedor-modulos-nosotros .modulo-nosotros img{
     width: 100%;
 }
 
-.mision-texto, .vision-texto{
+.modulo-nosotros .modulo-texto{
     text-align: center;
 }
 
-.mision-texto .titulo-mision, .vision-texto .titulo-vision{
+.modulo-nosotros .modulo-texto .titulo-modulo-nosotros{
+
     font-size: 22px;
 }
 
