@@ -1,49 +1,5 @@
 const btns = document.querySelectorAll('.btn-marcas');
 const limites = document.querySelectorAll('.limite');
-/* const btnTodos = document.querySelector('#btn-todos'); */
-/* const productos = document.querySelectorAll('.producto'); */
-
-
-/* limites.forEach(limite => {
-    limite.addEventListener('click', function(e){
-    let limiteProductos = limite.value;
-    const productos = e.target.parentElement.parentElement.nextElementSibling.children;
-   
-    for(let i = 0; i < productos.length; i++){
-        productos[i].classList.add('hidden');
-    } 
-    
-    if(limiteProductos > productos.length){
-        limiteProductos = productos.length
-        console.log(limiteProductos);
-        for(let i = 0; i < limiteProductos;i++){
-            productos[i].classList.add('visible');
-            productos[i].classList.remove('hidden');
-    
-    
-        }
-        
-        
-    }else{
-        for(let i = 0; i < limiteProductos;i++){
-        productos[i].classList.add('visible');
-        productos[i].classList.remove('hidden');
-
-
-    }
-}
-
-    
-
-
-    console.log(limiteProductos);
-    console.log(productos);
-})
-});
- */
-
-
-
 
 
 btns.forEach(btn => {
