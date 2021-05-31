@@ -106,11 +106,11 @@
 }
 
 .paquete .cintillo.bg-paquete3{
-    background-color: #0A5995;
+    background-color: #0e6bb3;
 }
 
 .paquete .cintillo.bg-paquete4{
-    background-color: #2F4BA7;
+    background-color: #3537ac;
 }
 
 /*#endregion*/
@@ -451,6 +451,28 @@
     }
 }
 
+.paquete{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.paquete.bg-paquete1{
+    background-image: url(../img/paq1inet.jpg);
+}
+
+.paquete.bg-paquete2{
+    background-image: url(../img/paq2inet.jpg);
+}
+
+.paquete.bg-paquete3{
+    background-image: url(../img/paq3inet.jpg);
+}
+.paquete.bg-paquete4{
+    background-image: url(../img/paq4inet.jpg);
+}
+
 .paquete .cintillo{
     padding: 20px;
     border-radius: 8px 8px 0px 0px;
@@ -477,23 +499,40 @@
     padding: 12px 24px;
 }
 
+.pg-paquetes .paquete .contenido-paquete{
+    text-align: start;
+}
+
 .contenido-paquete .txt-dispositivos {
+    font-size: 18px;
     border-bottom: solid 2px var(--secundario);
 }
 
-.contenido-paquete .img-dispositivos{
-    padding: 16px;
+.pg-paquetes .contenido-paquete .txt-dispositivos {
+    border-bottom: solid 2px var(--blanco);
+}
+
+.contenido-paquete .iconos-paquete{
+    padding: 16px 0;
     display: flex;
     justify-content: center;
 }
 
-.contenido-paquete .img-dispositivos i{
+.pg-paquetes .contenido-paquete .iconos-paquete{
+    justify-content: start;
+}
+
+.contenido-paquete .iconos-paquete i{
     font-size: 24px;
     color: var(--secundario);
     margin-right: 8px;
 }
 
-.contenido-paquete .img-dispositivos i:last-of-type{
+.pg-paquetes .contenido-paquete .iconos-paquete i{
+    color: var(--blanco);
+}
+
+.contenido-paquete .iconos-paquete i:last-of-type{
     margin-right: 0;
 }
 
@@ -503,7 +542,12 @@
 
 .contenido-paquete .precio-paquete{
     font-size: 22px;
-    color: #2F4BA7;
+    font-weight: bold;
+    color: var(--secundario);
+}
+
+.pg-paquetes .contenido-paquete .precio-paquete{
+    color: var(--blanco);
 }
 
 /*#endregion*/
@@ -760,8 +804,17 @@
     }
 }
 
+.pg-paquetes .paquete .contenido-paquete{
+    color: var(--blanco);
+    background-color: hsla(221, 85%, 34%, 0.70);
+}
+
+.paquete .contenido-paquete ul{
+    padding: 0;
+}
+
 .paquete .contenido-paquete ul li{
-    text-align: left;
+    list-style: none;
 }
 
 @media (min-width:680px){
