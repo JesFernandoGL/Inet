@@ -1,47 +1,79 @@
 const imagenesCarrousel = document.querySelectorAll('.hero-img');
+const btnAnt = document.querySelector('#btn-anterior-hero');
+const btnSig = document.querySelector('#btn-siguiente-hero');
+
+const lengthCarrousel = imagenesCarrousel.length;
+
+
+function carrousel(valor = -100){
+    
+       imagenesCarrousel.forEach(img => {
+        const posicion = parseInt(img.style.left);
+        img.style.left = posicion + valor + '%';
+        const posImgFinal = parseInt(imagenesCarrousel[lengthCarrousel-1].style.left);
+        const posImgInicial = parseInt(imagenesCarrousel[0].style.left); 
+      if(posImgFinal < 0){
+        resetearCarrousel()
+    }
+        
+    }); 
+ 
+}
+
+
 
 function resetearCarrousel(){
-    imagenesCarrousel[0].style.left ='0%';
-    imagenesCarrousel[1].style.left ='100%';
-    imagenesCarrousel[2].style.left ='200%';
+    let posicion = 0;
+    for(let i = 0; i < imagenesCarrousel.length; i++){
+        imagenesCarrousel[i].style.left = posicion + '%';
+        posicion += 100;
+    }
+}
+
+function finalCarrousel(){
+    let posicion = (lengthCarrousel-1) * -100;
+    for(let i = 0; i < imagenesCarrousel.length; i++){
+        imagenesCarrousel[i].style.left = posicion + '%';
+        posicion += 100;
+    }
 }
 
 
 
-const intervalo = setInterval(carrousel,4000);
 
+const imgAnterior = () => {
+    resetInterval();
+    if(imagenesCarrousel[0].style.left == '0%'){
+        finalCarrousel();
 
-
-
-function carrousel(){
-    /* imagenesCarrousel.forEach(img => {
+    }else{
+        imagenesCarrousel.forEach(img => {
         const posicion = parseInt(img.style.left);
-        img.style.left = posicion - 100 + '%';
-        console.log(img.style.left)
-        
-    }); */
-    const posicionFinal = parseInt(imagenesCarrousel[2].style.left)
-    for(let i = 0; i < imagenesCarrousel.length; i++){
-        const posicion = parseInt(imagenesCarrousel[i].style.left);
-        
-        imagenesCarrousel[i].style.left = posicion - 100 + '%';
-
-        if(posicionFinal <=  0){
-            resetearCarrousel();
-        }    
-
-       /* if(posicionfinal >= 0){
-            imagenesCarrousel[i].style.left = posicion - 50 + '%';       
-        }else
-        {
-            imagenesCarrousel[0].style.left ='0%';
-            imagenesCarrousel[1].style.left ='100%';
-            imagenesCarrousel[2].style.left = '200%';
-
-        }  */
+        img.style.left = posicion +100 + '%';        
+    });
     }
     
-
+    
 }
 
+
+const imgSiguiente = () => {
+    resetInterval();
+    carrousel(-100);
+    
+}
+
+
+
+btnAnt.addEventListener('click', imgAnterior);
+btnSig.addEventListener('click', imgSiguiente);
+
+let intervalo = setInterval(carrousel,5000);
+
 resetearCarrousel();
+
+function resetInterval(){
+    clearInterval(intervalo);
+    intervalo = setInterval(imgSiguiente,5000);
+    
+}

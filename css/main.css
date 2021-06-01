@@ -291,6 +291,36 @@
     position: relative;
 }
 
+.hero-overlay .contenedor-botones-hero{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: calc(50% - 60px);
+    z-index: 5;
+}
+
+.hero-overlay .contenedor-botones-hero .btn-carrousel-hero{
+    width: 50px;
+    height: 120px;
+    font-size: 40px;
+    background-color: var(--primario);
+    border: none;
+    color: var(--blanco);
+    font-weight: bold;
+    opacity: 30%;
+    transition: opacity 0.4s ease; 
+}
+
+
+
+.hero-overlay .contenedor-botones-hero .btn-carrousel-hero:hover{
+    opacity: 100%;
+}
+
+
+
+
 .hero-contenedor{
     position: relative;
     width: 100%;
