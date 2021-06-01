@@ -1,6 +1,7 @@
 const imagenesCarrousel = document.querySelectorAll('.hero-img');
 const btnAnt = document.querySelector('#btn-anterior-hero');
 const btnSig = document.querySelector('#btn-siguiente-hero');
+const timer = 6000;
 
 const lengthCarrousel = imagenesCarrousel.length;
 
@@ -68,12 +69,12 @@ const imgSiguiente = () => {
 btnAnt.addEventListener('click', imgAnterior);
 btnSig.addEventListener('click', imgSiguiente);
 
-let intervalo = setInterval(carrousel,5000);
+let intervalo = setInterval(carrousel,timer);
 
 resetearCarrousel();
 
 function resetInterval(){
     clearInterval(intervalo);
-    intervalo = setInterval(imgSiguiente,5000);
+    intervalo = setInterval(imgSiguiente,timer);
     
 }
