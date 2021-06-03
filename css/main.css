@@ -113,6 +113,36 @@
     background-color: #3537ac;
 }
 
+.w-app{
+    border-radius: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(128, 224, 38);
+    z-index: 10;
+}
+
+@media (min-width:680px){
+    .w-app{
+        bottom: 50px;
+        right: 50px;
+    }    
+}
+
+.w-app i{
+    padding: 12px;
+    font-size: 36px;
+    color: #fff;
+}
+
+@media (min-width:680px){
+    .w-app i{
+        padding: 16px;
+    }
+}
+
+
+
 /*#endregion*/
 
 /*#region #Header*/
@@ -163,6 +193,8 @@
     transition: left 0.4s ease;
 }
 
+
+
 @media (min-width: 1024px){
     .menu{
         position: static;
@@ -171,8 +203,23 @@
     }
 }
 
-.menu a{
-    display: inline-block;
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+
+@media (min-width:1024px){
+    .menu ul{
+        display: flex;
+    }
+}
+
+
+
+.menu ul li a{
+    display: block;
     color: var(--negro);
     font-size: 16px;
     text-decoration: none;
@@ -180,11 +227,62 @@
     border-top: 1px solid var(--blanco);
 }
 
+@media (min-width:1024px){
+    .menu ul li a{
+        border-top: none;
+    }
+}
+
+
+
+@media (min-width:1024px){
+    .menu ul li{
+        position: relative;
+    }
+}
+
+.menu ul li ul{
+    display: none;
+    padding: 0 12px;
+
+}
+
+@media (min-width:1024px){
+    .menu ul li ul{
+        position: absolute;
+    }
+}
+
+@media (min-width:1024px){
+    .menu ul li ul li{
+        width: 200px;
+    
+    }
+}
+
+.menu ul li ul li a{
+    display: block;
+    background-color: var(--grisClaro);
+    color: var(--negro);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
 @media (min-width: 1024px){
     .menu a{
         display: block;
         border: none;
     }
+}
+
+.menu a.active{
+    background-color: var(--azulClaro);
+    color: var(--blanco);
 }
 
 .menu a:hover{

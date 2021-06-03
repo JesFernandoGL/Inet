@@ -1,11 +1,12 @@
 const btnsPrev = document.querySelectorAll('.botones-carrousel-productos .btn-previous');
 const btnsNext = document.querySelectorAll('.botones-carrousel-productos .btn-next');
-const producto = document.querySelector('.producto');
+
 
 
 const productoSiguiente = (e) =>  {
     ;
     
+    const producto = document.querySelector('.producto.visible');
     const carrousel = e.target.parentElement.previousElementSibling;
     const sizeProduct = producto.clientWidth;
     
@@ -27,6 +28,8 @@ const productoSiguiente = (e) =>  {
 }
 
 const productoAnterior = (e) =>  {
+
+    const producto = document.querySelector('.producto.visible');
     const carrousel = e.target.parentElement.previousElementSibling;
     const sizeProduct = producto.clientWidth;
     carrousel.scrollLeft -= sizeProduct+16;

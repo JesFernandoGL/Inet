@@ -1,6 +1,12 @@
 const btns = document.querySelectorAll('.btn-marcas');
 const limites = document.querySelectorAll('.limite');
+const productos = document.querySelectorAll('.producto');
 
+
+productos.forEach(producto => {
+    producto.classList.add('visible');
+    
+});
 
 btns.forEach(btn => {
     btn.addEventListener('click', filtrarMarca)

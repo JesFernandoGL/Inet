@@ -11,7 +11,7 @@
     <title>Paquetes Inet Alto rendimiento para ti</title>
 </head>
 <body>
-<header class="header"><!-- Seccion Header -->
+    <header class="header"><!-- Seccion Header -->
         <div class="contenedor header-content">
             <div class="logo-content">
                 <a href="index.html"><img src="img/logo_inet_negro.png" alt="logo_inet"></a>
@@ -24,15 +24,22 @@
                 </div>
             </div>
             <nav class="menu" id="menu">
-                <a href="planes.html">Planes</a>
-                <a href="productosyservicios.html">Productos y Servicios</a>
-                <a href="soporte.html">Soporte</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="fundacion.html">Socialmente Responsable</a>                      
+                <ul>
+                    <li><a href="planes.html" class="active">Planes</a></li>
+                    <li><a href="productosyservicios.html">Productos y Servicios</a>
+                        <ul>
+                            <li><a href="productosyservicios.html#sec-productos">Productos</a></li>
+                            <li><a href="productosyservicios.html#sec-servicios">Servicios</a></li>
+                        </ul>                    
+                    </li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="fundacion.html">Socialmente Responsable</a></li>
+                </ul>                  
             </nav>
         </div>
-</header>
+    </header>
     <div class="hero-paginas bg-paquetes"><!-- Seccion hero -->
     <div class="hero-overlay">
             <div class="contenedor hero-contenedor">
@@ -196,7 +203,11 @@
             </div>
         </div>
     </section>
-    
+    <div class="w-app">
+        <a href="https://wa.me/525576565334" target="blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>    
     <footer class="seccion bg-grisOscuro"><!-- Seccion Resultados Inet -->
         <div class="contenedor">
             <div class="contenedor-footer txt-blanco">
