@@ -844,11 +844,18 @@
 }
 
 .hero-paginas.bg-paquetes{
-    background-image: url('../img/bg_paquetes.jpg');
+    background-image: url('../img/banner-small-planes.jpg');
+}
+
+@media (min-width:420px){
+    .hero-paginas.bg-paquetes{
+        background-image: url('../img/banner-wide-planes.jpg');
+    }
+
 }
 
 .hero-paginas.bg-productos{
-    background-image: url('../img/bg_productos.jpg');
+    background-image: url('../img/banner-wide-productos.jpg');
 }
 
 .hero-paginas.bg-nosotros{
